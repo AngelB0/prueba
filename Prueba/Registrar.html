@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Registro de Usuario</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script src="assets/js/eventos.js"></script>
+
+</head>
+
+<body class="min-vh-2000">
+  <!-- PRIMER NAVBAR (LOGO & REDES SOCIALES)-->
+  <nav class="navbar navbar-light navbar-custom">
+    <div class="container-fluid">
+      <div>
+        <a class="navbar-brand" href="#" style="margin-left: 100px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="25" fill="#FFFFFF" class="bi bi-0-circle-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 4.951c-1.008 0-1.629 1.09-1.629 2.895v.31c0 1.81.627 2.895 1.629 2.895s1.623-1.09 1.623-2.895v-.31c0-1.8-.621-2.895-1.623-2.895" />
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-8.012 4.158c1.858 0 2.96-1.582 2.96-3.99V7.84c0-2.426-1.079-3.996-2.936-3.996-1.864 0-2.965 1.588-2.965 3.996v.328c0 2.42 1.09 3.99 2.941 3.99" />
+          </svg>
+          <a class="navbar-brand" href="#" style="color: #FFFFFF;">INDIGO</a>
+        </a>
+      </div>
+
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a href="#"><!--insta-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="25" fill="#FFFFFF" class="bi bi-instagram"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+            </svg>
+          </a>
+          <a href="#"><!--facebook-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="25" fill="#FFFFFF" class="bi bi-facebook"
+              viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+            </svg>
+          </a>
+          <a href="#"><!--tiktok-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="25" fill="#FFFFFF" class="bi bi-tiktok"
+              viewBox="0 0 16 16">
+              <path
+                d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+            </svg>
+          </a>
+          <a href="#"><!--youtube-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="25" fill="#FFFFFF" class="bi bi-youtube"
+              viewBox="0 0 16 16">
+              <path
+                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+            </svg>
+          </a>
+          <a href="#"><!--x-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="25" fill="#FFFFFF" class="bi bi-twitter-x"
+              viewBox="0 0 16 16">
+              <path
+                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+            </svg>
+          </a>
+          <a href="#" style="margin-right: 100px;"><!--LINK-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="25" fill="#FFFFFF" class="bi bi-linkedin"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- SEGUNDO NAVBAR CONTIENE LA LISTA DE FUNCIONES-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="margin-left: 100px;">
+        <img src="assets/img/emma.PNG" width="150">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style=" font-size: 22px;">Nosotras</a>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" style="margin-left: 50px; font-size: 22px;" id="navbarDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Columnas
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">columna1</a></li>
+              <li><a class="dropdown-item" href="#">columna2</a></li>
+              <li><a class="dropdown-item" href="#">columna3</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">otras opciones</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" style="margin-left: 30px; font-size: 22px;" id="navbarDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Mujeres que inspiran
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">columna1</a></li>
+              <li><a class="dropdown-item" href="#">columna2</a></li>
+              <li><a class="dropdown-item" href="#">columna3</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">otras opciones</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"
+              style="margin-left: 50px; color: #22c7c4; font-size: 22px;">Newsletter</a>
+          </li>
+
+          <li class="nav-item">
+
+          </li>
+
+        </ul>
+        <form class="d-flex" action="Registrar.html">
+          <button type="submit" class="btn btn-tertiary">Suscríbete</button>
+        </form>
+        <a href="#" style="margin-left: 20px; margin-right: 100px;"><!--buscar-->
+          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#E5808A" class="bi bi-search"
+            viewBox="0 0 16 16">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <hr class="navbar-divider">
+
+  <!--TODO EL CONTENIDO FORMULARIO-->
+  <div class="conteiner justify-content-center">
+    <div class="container mt-5">
+      <p>
+        <center>
+          <h1 style="color: #FF1055">¡Beneficios de suscriptoras!</h1>
+        </center>
+      </p>
+      <div style="text-align: center;">
+        <h1 style="display: inline; color: #FF1055; margin-left: -10px;">¿</h1>
+        <h1 style="display: inline; color: #024D4F;">Lista para unirte a este espacio de mujeres</h1>
+        <h1 style="display: inline; color: #FF1055; margin-left: -10px;">?</h1>
+      </div>
+
+      <form id="registrationForm" action="registro_exitoso.php" method="post">
+
+        <div class="container " style="padding-top: 10px;">
+          <center>
+            <label style="font-size: 22px; width: 20%;" for="nombre">Nombre del suscriptor</label><br>
+            <input style="width: 50%;" type="text" class="form-control-lg" id="nombre" name="nombre" required>
+          </center>
+        </div>
+        <div class="container " style="padding-top: 10px;">
+          <center>
+            <label style="font-size: 22px; width: 20%;" for="email">Correo Electrónico</label><br>
+            <input style="width: 50%;" type="email" class="form-control-lg" id="email" name="email" required>
+          </center>
+        </div>
+        <div class="container" style="width: 50%; padding-top: 10px;">
+          <center>
+            <label style="font-size: 22px; width: 80%;" for="fechaNacimiento">Cumpleaños</label><br>
+            <input style="width: 100%;" type="date" class="form-control-lg" id="fechaNacimiento" name="fechaNacimiento"
+              required>
+          </center>
+
+        </div>
+        <div class="container" style="width: 50%; padding-top: 10px;">
+          <center>
+            <label style="font-size: 22px; width: 90%;" for="password">Contraseña</label><br>
+            <input style="width: 100%;" type="password" class="form-control-lg" id="password" name="password"
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z])(?=.*[._\-$/]).{6,8}$"
+              title="La contraseña debe tener entre 6 y 8 caracteres y contener al menos una mayúscula, una minúscula, un número no consecutivo y uno o varios de los siguientes caracteres especiales: . _ - $ /"
+              required>
+          </center>
+        </div>
+
+        <div class="container" style="width: 50%; padding-top: 10px;">
+          <center>
+            <label style="font-size: 22px; width: 40%;" for="confirmPassword">Confirmar Contraseña</label><br>
+            <input style="width: 100%;" type="password" class="form-control-lg" id="confirmPassword"
+              name="confirmPassword" required>
+            <p id="message" style="color: red;"></p>
+            <p><a class="btn-tertiary custom-link" id="verPassword">Ver Contraseña</a></p>
+            <input type="hidden" id="opcion" name="opcion" value=""><!--HIDDEN-->
+          </center>
+        </div>
+
+        <div class="container" style="margin-top: 50px; margin-bottom: 50px; width: 70%;">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="card " style="border-width:3px; width: 90%;">
+                <div class="card-body">
+                  <h2 class="card-title text-center" style="color: #148F8C; font-family: Monserrat; font-weight: bold;">
+                    Gratis</h2>
+                  <p class="card-text">Te ofrecemos una probadita de lo que es Emm </p>
+                  <p>
+                  <h1 class="card-title text-center" style="color: #024D4F; font-family: Monserrat; font-weight: bold;">
+                    MX $0.00</h1>
+                  </p>
+                  <h2 class="card-title text-center"
+                    style="color: #000; font-family: Monserrat; font-weight: bold; margin-top: 40px;">Incluye:</h2>
+                  <div class="ms-auto"> <!-- Div para alinear a la derecha -->
+                    <a class="navbar-brand" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor"
+                        class="bi bi-envelope-paper" viewBox="0 0 16 16">
+                        <path
+                          d="M4 0a2 2 0 0 0-2 2v1.133l-.941.502A2 2 0 0 0 0 5.4V14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5.4a2 2 0 0 0-1.059-1.765L14 3.133V2a2 2 0 0 0-2-2zm10 4.267.47.25A1 1 0 0 1 15 5.4v.817l-1 .6zm-1 3.15-3.75 2.25L8 8.917l-1.25.75L3 7.417V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1zm-11-.6-1-.6V5.4a1 1 0 0 1 .53-.882L2 4.267zm13 .566v5.734l-4.778-2.867zm-.035 6.88A1 1 0 0 1 14 15H2a1 1 0 0 1-.965-.738L8 10.083zM1 13.116V7.383l4.778 2.867L1 13.117Z" />
+                      </svg>
+                      Newsletter quincenal
+                    </a>
+                  </div>
+                  <div class="ms-auto" style="margin-top: 10px;"> <!-- Div para alinear a la derecha -->
+                    <a class="navbar-brand" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor"
+                        class="bi bi-newspaper" viewBox="0 0 16 16">
+                        <path
+                          d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z" />
+                        <path
+                          d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z" />
+                      </svg>
+                      Columnas invitadas
+                    </a>
+                  </div>
+                  <center>
+                    <button id="btn-gratis" name="opcion" value="Gratis" type="submit" class="btn btn-tertiary"
+                      style="margin-top: 430px;">Comienza</button>
+                  </center>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card " style="border-width:3px; width: 90%;">
+                <div class="card-body ">
+                  <h1 class="card-title text-center" style="color: #FF1055; font-family: Monserrat; font-weight: bold;">
+                    Premium</h1>
+                  <p class="card-text">Accede a todos los beneficios de Emma</p>
+                  <h2 class="card-title text-center" style="color: #024D4F; font-family: Monserrat; font-weight: bold;">
+                    MX $599.00</h2>
+
+                  <center>
+                    <div style="display: flex; align-items: center; width: 35%;">
+                      <h4 class="card-title text-center"
+                        style="color: #148F8C; font-family: Monserrat; font-weight: bold; margin-right: 20px;">Anual
+                      </h4>
+                      <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault"
+                          style="transform: scale(1.8);">
+                      </div>
+                    </div>
+                  </center>
+                  <h2 class="card-title text-center"
+                    style="color: #000; font-family: Monserrat; font-weight: bold; margin-top: 40px;">Incluye:</h2>
+                  <div class="ms-auto"> <!-- Div para alinear a la derecha -->
+                    <a class="navbar-brand" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor"
+                        class="bi bi-envelope-paper" viewBox="0 0 16 16">
+                        <path
+                          d="M4 0a2 2 0 0 0-2 2v1.133l-.941.502A2 2 0 0 0 0 5.4V14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5.4a2 2 0 0 0-1.059-1.765L14 3.133V2a2 2 0 0 0-2-2zm10 4.267.47.25A1 1 0 0 1 15 5.4v.817l-1 .6zm-1 3.15-3.75 2.25L8 8.917l-1.25.75L3 7.417V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1zm-11-.6-1-.6V5.4a1 1 0 0 1 .53-.882L2 4.267zm13 .566v5.734l-4.778-2.867zm-.035 6.88A1 1 0 0 1 14 15H2a1 1 0 0 1-.965-.738L8 10.083zM1 13.116V7.383l4.778 2.867L1 13.117Z" />
+                      </svg>
+                    </a>
+                    Newsletter lunes a viernes
+                  </div>
+                  <div class="ms-auto" style="margin-top: 10px;"> <!-- Div para alinear a la derecha -->
+                    <a class="navbar-brand" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor"
+                        class="bi bi-newspaper" viewBox="0 0 16 16">
+                        <path
+                          d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z" />
+                        <path
+                          d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z" />
+                      </svg>
+                    </a>
+                    Acceso ilimitado al contenido de nuestro portal
+                  </div>
+                  <div class="ms-auto" style="margin-top: 10px;"> <!-- Div para alinear a la derecha -->
+                    <a class="navbar-brand" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor"
+                        class="bi bi-ticket-detailed" viewBox="0 0 16 16">
+                        <path
+                          d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5M5 7a1 1 0 0 0 0 2h6a1 1 0 1 0 0-2z" />
+                        <path
+                          d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6zM1.5 4a.5.5 0 0 0-.5.5v1.05a2.5 2.5 0 0 1 0 4.9v1.05a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-1.05a2.5 2.5 0 0 1 0-4.9V4.5a.5.5 0 0 0-.5-.5z" />
+                      </svg>
+                    </a>
+                    Cupones de descuento en más de 1,000 marcas
+                  </div>
+                  <div class="ms-auto" style="margin-top: 10px;"> <!-- Div para alinear a la derecha -->
+                    <a class="navbar-brand" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor"
+                        class="bi bi-mic-fill" viewBox="0 0 16 16">
+                        <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0z" />
+                        <path
+                          d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5" />
+                      </svg>
+                    </a>
+                    Conferencias, talleres y encuentros
+                  </div>
+                  <div class="ms-auto" style="margin-top: 10px;"> <!-- Div para alinear a la derecha -->
+                    <a class="navbar-brand" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor"
+                        class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+                      </svg>
+                    </a>
+                    Apoya a mujeres en situación vulnerableo de violencia
+                  </div>
+                  <center>
+                    <button id="btn-premium" name="opcion" value="Premium" type="submit" class="btn btn-tertiary"
+                      style="margin-top: 200px;">Comienza</button>
+                    <center>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="card-footer" style="margin-bottom: 0px;">
+    <nav class="navbar navbar-light navbar-custom">
+      <div class="container-fluid" style="margin-bottom: 50PX;">
+        <a class="navbar-brand" href="#" style="margin-left: 55px; margin-top: 50px;">
+          <img src="assets/img/emma_f.PNG" width="150">
+        </a>
+
+        <div class="container">
+          <div class="d-flex justify-content-center gap-5" style="margin-top: 50px; color: #FFFFFF;">
+            <a href="#" class="custom-link text-center">
+              <p>Términos y condiciones</p>
+            </a>
+            <a href="#" class="custom-link text-center">
+              <p>Aviso de privacidad</p>
+            </a>
+            <a href="#" class="custom-link text-center">
+              <p>Preguntas frecuentes</p>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="container-fluid" style="margin-left: 30px;">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#"><!--insta-->
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="25" fill="#FFFFFF" class="bi bi-instagram"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                </svg>
+              </a>
+              <a href="#"><!--facebook-->
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="25" fill="#FFFFFF" class="bi bi-facebook"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                </svg>
+              </a>
+              <a href="#"><!--tiktok-->
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="25" fill="#FFFFFF" class="bi bi-tiktok"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+                </svg>
+              </a>
+              <a href="#"><!--youtube-->
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="25" fill="#FFFFFF" class="bi bi-youtube"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                </svg>
+              </a>
+              <a href="#"><!--x-->
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="25" fill="#FFFFFF" class="bi bi-twitter-x"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                </svg>
+              </a>
+              <a href="#" style="margin-right: 100px;"><!--LINK-->
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="25" fill="#FFFFFF" class="bi bi-linkedin"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="container text-center" style="color: #FFFFFF;">
+          <hr style="color: #FFFFFF;">
+          <p class="mb-0">C.Montes Urales 425, Lomas - Virreyes de Chapultepec, Miguel Hidalgo, 11000 Ciudad de México,
+            CDMX</p>
+          <p style="display: inline; color: #FFA70F; margin-left: -10px;">Contacto</p>
+          <p style="display: inline; color: #FFFFFF;"> <a href="#" class="custom-link"><b>55 3099 3000 |
+                Web@capitalmedia.mx </b> </a></p>
+          <p class="mb-0">© Todos los derechos reservados</p>
+          <p class="mb-0">Capital media Copyrigth 2023</p>
+        </div>
+      </div>
+
+    </nav>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    //FUNCION PARA CONFIRMAR EL PASSWORD
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.getElementById('registrationForm');
+
+      form.addEventListener('submit', function (event) {
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirmPassword').value;
+
+        if (password !== confirmPassword) {
+          event.preventDefault(); // Evita que se envíe el formulario
+          document.getElementById('message').textContent = 'Las contraseñas no coinciden.';
+        }
+      });
+    });
+    //FUNCION PARA VISUALIZAR LA CONTRASEÑA
+    document.getElementById("verPassword").addEventListener("click", function () {
+      var passwordInput = document.getElementById("password");
+      var passwordInput2 = document.getElementById("confirmPassword");
+      var button = document.getElementById("verPassword");
+
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        passwordInput2.type = "text";
+        button.textContent = "Ocultar Contraseña";
+      } else {
+        passwordInput.type = "password";
+        passwordInput2.type = "password";
+        button.textContent = "Ver Contraseña";
+      }
+    });
+    //PARA LOS BOTONES DIFERENCIAR SI ELIGIO GRATIS O PREMIUM
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("btn-gratis").addEventListener("click", function () {
+        document.getElementById("opcion").value = this.value;
+      });
+
+      document.getElementById("btn-premium").addEventListener("click", function () {
+        document.getElementById("opcion").value = this.value;
+      });
+    });
+  </script>
+
+</body>
+
+</html>

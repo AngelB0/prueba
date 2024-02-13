@@ -1,0 +1,96 @@
+
+/* colores*/
+:root {
+  --bs-primary: #024D4F;
+  --bs-secondary: #EDB4B7;
+  --bs-Tertiary: #FFA70F;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-font-sans-serif: system-ui, -apple-system, "Montserrat regular", Montserrat medium, 
+    "Montserrat semibold", Arial, "Montserrat bold", "Montserrat light", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+}
+.navbar-custom {
+  background-color: #024D4F; /* Cambia este valor al color deseado */
+}
+
+
+.navbar-divider {
+  margin-top: 0; /* Elimina el margen superior */
+  margin-bottom: 5px; /* Ajusta el margen inferior según sea necesario */
+  border-top: 5px solid var(--bs-primary); /* Define el grosor y el color del borde */
+}
+
+
+.btn-tertiary {
+  background-color: #FFA70F; /* Color de fondo */
+  color: var(--bs-primary); /* Color del texto */
+  font-family: "Monserrat", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px; /* Tamaño de letra */
+  padding: 6px 20px; /* Ajusta el padding según sea necesario */
+  border: none; /* Opcional: eliminar el borde */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  transition: background-color 0.3s ease; /* Efecto de transición suave */
+}
+
+.btn-tertiary:hover {
+  background-color: #E09000; /* Cambia el color de fondo al pasar el ratón */
+}
+
+.custom-link {
+  color: #FFFFFF; /* Color blanco */
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+}
+
+/* Estilos para el formulario y su contenedor */
+.formulario-container {
+  width: 70%; /* Ancho del contenedor del formulario */
+  padding: 20px;
+  background-color: #fff; /* Color de fondo blanco */
+  border-radius: 10px;
+}
+
+/* Estilos adicionales para personalizar según tus preferencias */
+.bg-aqua {
+  background-color: aqua; /* Color de fondo aqua */
+}
+
+
+body {
+  font: 1rem/1.5 var(--bs-font-sans-serif);
+}
+a {
+  color: var(--bs-blue);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #343a40; /* Puedes ajustar el color de fondo según tu preferencia */
+  color: #ffffff; /* Puedes ajustar el color del texto según tu preferencia */
+  padding: 0px 0;
+}
+
+/* Estilos adicionales */
+.container_1 {
+  max-width: 90%;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
